@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="css/style.css" />
+
+		<title>Конвертер валют на JavaScript</title>
+	</head>
+	<body>
+		<div class="container pt-5 pb-5">
+			<div class="row justify-content-center">
+				<div class="col-6">
+					<div class="main-box card p-5 ">
+
+
+						
+							<h1 class="mb-4 ">Конвертер валют</h1>
+
+							<div class="courses mt-2 mb-3">
+								<div class="course card p-1 mr-4">
+									<div class="course-header"><strong>Курс USD</strong></div>
+									<div class="course-value" data-value="USD">--</div>
+								</div>
+								<div class="course card p-1 mr-4">
+									<div class="course-header"><strong>Курс EUR</strong></div>
+									<div class="course-value" data-value="EUR">--</div>
+								</div>
+								<div class="course card p-1 mr-4">
+									<div class="course-header"><strong>Курс GPB</strong></div>
+									<div class="course-value" data-value="GBP">--</div>
+								</div>
+							</div>
+
+							<div class="row mb-1">
+								<div class="col">
+									<label for="name">У меня есть:</label>
+									<select disabled class="form-control" id="exampleFormControlSelect1">
+										<option value="RUB" selected>RUB - Рубли</option>
+									</select>
+								</div>
+								<div class="col">
+									<label for="name">Хочу приобрести:</label>
+									<select id="select" class="form-control" id="exampleFormControlSelect1">
+										<option value="USD">USD - Доллар США</option>
+										<option value="EUR">EUR - Евро</option>
+										<option value="GBP">GPB - Фунт стерлингов</option>
+									</select>
+								</div>
+							</div>
+							<form class="form mt-3" action="php/smart.php" method="POST">
+								<div class="row">
+									<div class="col">
+										<input id="input" type="number" class="form-control" required name="my_money" autofocus />
+									</div>
+									<div class="col">
+										<input id="result" type="number" class="form-control" required />
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-6 mt-3 mb-3">
+										<input type="email" class="form-control" required name="user_email" placeholder="Введите Email для связи">
+									</div>
+								</div>
+								<button type="submit" class="btn btn-primary ">Записаться на обмен</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/submit.js"></script>
+	</body>
+</html>

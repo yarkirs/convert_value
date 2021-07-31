@@ -1,0 +1,11 @@
+.main-box{
+  box-shadow:0 14px 21px 0 rgba(0,0,0,0.17)
+}
+.courses{
+    display: flex;
+    flex-direction: row;
+}
+
+.course-header{
+    font-size: 20px
+} 
